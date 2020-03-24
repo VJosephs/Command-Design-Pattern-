@@ -1,5 +1,14 @@
 // Print Command
 package csce247.assignments.command;
-public class PrintCommand implements Command{
+public class PrintCommand implements Command {
 
+	private Document doc;
+	
+	public PrintCommand(Document doc) {
+		this.doc = doc;
+	}
+	
+	public void execute() {
+		doc.print();
+	}
 }
