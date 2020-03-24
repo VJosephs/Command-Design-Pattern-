@@ -1,5 +1,5 @@
 // SpellCommand Goes here
-package csce247.assignments.command;
+
 public class SpellCommand implements Command {
 
 	private Document doc;
