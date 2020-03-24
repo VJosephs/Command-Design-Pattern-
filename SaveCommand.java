@@ -1,5 +1,14 @@
 // Save Command goes here
 package csce247.assignments.command;
-public class SaveCommand implements Command{
+public class SaveCommand implements Command {
 
+	private Document doc;
+	
+	public SaveCommand(Document doc) {
+		this.doc = doc;
+	}
+	
+	public void execute() {
+		doc.save();
+	}
 }
