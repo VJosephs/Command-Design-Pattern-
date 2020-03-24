@@ -13,8 +13,10 @@ public class InputHandler {
 	}
 
 	public void inputEntered(String data) {
-
-		commands.get(data).execute();
+		if(commands.get(data) != null)
+			commands.get(data).execute();
+		else
+			System.out.println("Sorry, we don't recognize that command");
 	}
 
 }
