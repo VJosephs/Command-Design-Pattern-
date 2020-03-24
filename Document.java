@@ -1,7 +1,10 @@
 // Document goes here
 package csce247.assignments.command;
 public class Document {
-	public Document(string name) {
+	
+	private String name;
+	
+	public Document(String name) {
 		this.name = name;
 		System.out.println("Document " + name + " is being created");
 	}
